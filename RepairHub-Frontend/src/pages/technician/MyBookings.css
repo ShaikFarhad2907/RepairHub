@@ -1,0 +1,47 @@
+.my-bookings{
+
+padding:60px 8%;
+
+background:#f8f9fc;
+
+min-height:100vh;
+
+}
+
+.my-bookings h1{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+th,td{
+
+padding:18px;
+
+text-align:center;
+
+border-bottom:1px solid #ddd;
+
+}
+
+th{
+
+background:#2563eb;
+
+color:white;
+
+}

@@ -1,0 +1,101 @@
+.technician-dashboard{
+
+padding:60px 8%;
+
+background:#f5f7fb;
+
+min-height:100vh;
+
+}
+
+.technician-dashboard h1{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.dashboard-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.dashboard-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+text-decoration:none;
+
+color:#222;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+transition:.3s;
+
+}
+
+.dashboard-box:hover{
+
+transform:translateY(-8px);
+
+}
+
+.today-bookings{
+
+margin-top:50px;
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.today-bookings h2{
+
+margin-bottom:25px;
+
+color:#2563eb;
+
+}
+
+.today-bookings table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+.today-bookings th{
+
+background:#2563eb;
+
+color:white;
+
+padding:15px;
+
+}
+
+.today-bookings td{
+
+padding:15px;
+
+text-align:center;
+
+border-bottom:1px solid #ddd;
+
+}

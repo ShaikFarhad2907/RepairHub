@@ -1,0 +1,314 @@
+.reviews-page {
+
+    min-height: 100vh;
+
+    padding: 40px 6%;
+
+    background: #f4f7fb;
+
+    box-sizing: border-box;
+
+}
+
+
+/* Page Title */
+
+.reviews-page h1 {
+
+    margin: 0 0 30px;
+
+    color: #172033;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* Cards Container */
+
+.reviews-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 24px;
+
+}
+
+
+
+/* Review Card */
+
+.review-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    max-width: 280px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 8px 25px rgba(15,23,42,0.08);
+
+    border: 1px solid #e5e7eb;
+
+    transition: 0.3s ease;
+
+}
+
+.reviews-grid {
+    justify-items: start;
+}
+
+
+.review-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,0.15);
+
+}
+
+
+
+/* Top Gradient */
+
+.review-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 70px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #60a5fa
+        );
+
+}
+
+
+
+/* Technician Circle */
+
+.review-card::after {
+
+    content: "👨‍🔧";
+
+    position: absolute;
+
+    top: 35px;
+
+    left: 20px;
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* Service Name */
+
+.review-card h2 {
+
+    position: relative;
+
+    margin-top: 55px;
+
+    margin-bottom: 18px;
+
+    color: #111827;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* Details */
+
+.review-card p {
+
+    margin: 9px 0;
+
+    color: #4b5563;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+.review-card strong {
+
+    color: #111827;
+
+}
+
+
+
+/* Write Review Button */
+
+.review-card button {
+
+    width: 100%;
+
+    margin-top: 16px;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        );
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+.review-card button:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+
+/* Submitted Message */
+
+.review-success {
+
+    margin-top: 15px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* Tablet */
+
+@media(max-width:1000px) {
+
+
+    .reviews-grid {
+
+        grid-template-columns:
+            repeat(2,280px);
+
+    }
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:650px) {
+
+
+    .reviews-page {
+
+        padding: 30px 18px;
+
+    }
+
+
+    .reviews-page h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .reviews-grid {
+
+        grid-template-columns: 1fr;
+
+        justify-content: center;
+
+    }
+
+
+    .review-card {
+
+        width: 100%;
+
+        max-width: 320px;
+
+    }
+
+}

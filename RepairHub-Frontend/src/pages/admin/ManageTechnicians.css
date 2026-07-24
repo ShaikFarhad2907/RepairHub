@@ -1,0 +1,211 @@
+.manage-technicians-page {
+
+    min-height:100vh;
+
+    padding:40px 6%;
+
+    background:#f4f7fb;
+
+}
+
+
+.manage-technicians-page h1 {
+
+    color:#111827;
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+
+.page-description {
+
+    color:#6b7280;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.technician-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.technician-card {
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.08);
+
+    transition:.3s;
+
+}
+
+
+
+.technician-card:hover {
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.technician-avatar {
+
+    width:65px;
+
+    height:65px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#eff6ff;
+
+    font-size:35px;
+
+}
+
+
+
+.technician-card h2 {
+
+    margin:15px 0;
+
+    color:#111827;
+
+}
+
+
+
+.technician-card p {
+
+    color:#4b5563;
+
+    font-size:14px;
+
+}
+
+
+
+.pending-status {
+
+    display:inline-block;
+
+    margin:15px 0;
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+    background:#fef3c7;
+
+    color:#b45309;
+
+    font-weight:700;
+
+    font-size:13px;
+
+}
+
+
+
+.technician-actions {
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+
+
+.technician-actions button {
+
+    flex:1;
+
+    padding:11px;
+
+    border:none;
+
+    border-radius:10px;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+
+.approve-btn {
+
+    background:#16a34a;
+
+}
+
+
+
+.approve-btn:hover {
+
+    background:#15803d;
+
+}
+
+
+
+.reject-btn {
+
+    background:#dc2626;
+
+}
+
+
+
+.reject-btn:hover {
+
+    background:#b91c1c;
+
+}
+
+
+
+.empty-technician {
+
+    background:white;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+}

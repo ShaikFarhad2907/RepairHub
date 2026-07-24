@@ -1,0 +1,225 @@
+.completed-page {
+
+    min-height: 100vh;
+
+    padding: 40px 6%;
+
+    background: #f4f7fb;
+
+}
+
+
+
+.completed-header {
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.completed-header h1 {
+
+    margin: 0;
+
+    font-size: 32px;
+
+    color: #111827;
+
+}
+
+
+
+.completed-header p {
+
+    margin-top: 8px;
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+}
+
+
+
+
+.completed-grid {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 24px;
+
+}
+
+
+
+
+.completed-card {
+
+    background: white;
+
+    padding: 24px;
+
+    border-radius: 18px;
+
+    box-shadow:
+    0 8px 25px rgba(15,23,42,0.08);
+
+    transition: 0.3s ease;
+
+}
+
+
+
+.completed-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+    0 12px 30px rgba(15,23,42,0.12);
+
+}
+
+
+
+
+.completed-title {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding-bottom:15px;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+
+
+.completed-title h2 {
+
+    margin:0;
+
+    font-size:22px;
+
+    color:#2563eb;
+
+}
+
+
+
+.completed-title span {
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+
+
+
+
+.completed-details {
+
+    margin-top:18px;
+
+}
+
+
+
+.completed-details p {
+
+    margin:12px 0;
+
+    color:#4b5563;
+
+    line-height:1.5;
+
+    font-size:15px;
+
+}
+
+
+
+.completed-details strong {
+
+    color:#111827;
+
+}
+
+
+
+
+.empty-completed {
+
+    max-width:500px;
+
+    margin:80px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:
+    0 8px 25px rgba(15,23,42,0.08);
+
+}
+
+
+
+.empty-completed h2 {
+
+    color:#111827;
+
+}
+
+
+
+.empty-completed p {
+
+    color:#6b7280;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+    .completed-page{
+
+        padding:25px 18px;
+
+    }
+
+
+    .completed-title{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+}

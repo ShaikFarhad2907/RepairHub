@@ -1,0 +1,129 @@
+.profile-dropdown {
+    position: relative;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.profile-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.profile-avatar,
+.large-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6c63ff, #00bcd4);
+    color: white;
+    font-weight: 700;
+}
+
+.profile-avatar {
+    width: 34px;
+    height: 34px;
+}
+
+.large-avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+}
+
+.profile-name {
+    font-weight: 600;
+}
+
+.dropdown-arrow {
+    font-size: 11px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.profile-menu {
+    position: absolute;
+    top: 58px;
+    right: 0;
+    width: 245px;
+    background: white;
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.16);
+    z-index: 1000;
+    animation: dropdownOpen 0.25s ease;
+}
+
+@keyframes dropdownOpen {
+
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-menu-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile-menu-header div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-menu-header small {
+    margin-top: 3px;
+    color: #777777;
+}
+
+.profile-menu a,
+.logout-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    color: #222222;
+    background: transparent;
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.profile-menu a:hover,
+.logout-button:hover {
+    background: #f3f4ff;
+    transform: translateX(4px);
+}
+
+.logout-button {
+    color: #e53935;
+    margin-top: 5px;
+    border-top: 1px solid #eeeeee;
+}

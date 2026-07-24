@@ -1,0 +1,250 @@
+.manage-page {
+
+    min-height:100vh;
+
+    padding:50px 8%;
+
+    background:#f5f7fb;
+
+}
+
+
+/* Heading */
+
+.manage-page h1 {
+
+    text-align:center;
+
+    color:#1f2937;
+
+    font-size:32px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* Add button */
+
+.add-btn {
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:13px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    margin-bottom:25px;
+
+}
+
+
+.add-btn:hover {
+
+    background:#1d4ed8;
+
+}
+
+
+
+
+
+/* Form */
+
+.service-form {
+
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+.service-form input,
+.service-form textarea {
+
+
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    margin-bottom:15px;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+.service-form textarea {
+
+    min-height:100px;
+
+}
+
+
+
+
+.save-btn {
+
+
+    background:#16a34a;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+/* Table */
+
+
+.manage-page table {
+
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+.manage-page th {
+
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:16px;
+
+}
+
+
+
+.manage-page td {
+
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+
+
+}
+
+
+
+.manage-page tr:hover {
+
+
+    background:#f8fafc;
+
+
+}
+
+
+
+
+.manage-page td button {
+
+
+    padding:8px 15px;
+
+    border:none;
+
+    border-radius:7px;
+
+    margin:5px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:#2563eb;
+
+}
+
+
+
+.manage-page td button:last-child {
+
+
+    background:#dc2626;
+
+}
+
+
+
+.manage-page td button:hover {
+
+
+    opacity:.85;
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+
+    .manage-page{
+
+        padding:30px 15px;
+
+        overflow-x:auto;
+
+    }
+
+
+}
